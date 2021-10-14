@@ -1,0 +1,96 @@
+2019-01-29 22:29:23.835 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2019-01-29 22:29:24.420 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.3
+2019-01-29 22:29:24.421 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-01-29 22:29:24.421 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\dev\CFree\backend\venv\Scripts\cfree\solr-6.6.3
+2019-01-29 22:29:24.429 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-01-29T22:29:24.422448800Z
+2019-01-29 22:29:24.430 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2019-01-29 22:29:24.474 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\dev\CFree\backend\venv\Scripts\cfree\solr-6.6.3\server\solr
+2019-01-29 22:29:24.481 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\dev\CFree\backend\venv\Scripts\cfree\solr-6.6.3\server\solr\solr.xml
+2019-01-29 22:29:24.735 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2019-01-29 22:29:24.854 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath D:\dev\CFree\backend\venv\Scripts\cfree\solr-6.6.3\server\solr
+2019-01-29 22:29:25.227 INFO  (main) [   ] o.e.j.s.Server Started @2269ms
+2019-01-29 22:29:25.432 INFO  (qtp1362728240-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=82
+2019-01-29 22:30:04.848 INFO  (qtp1362728240-16) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-01-29 22:30:04.849 INFO  (qtp1362728240-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={} status=0 QTime=2
+2019-01-29 22:30:52.756 INFO  (qtp1362728240-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=58
+2019-01-29 22:30:52.837 INFO  (qtp1362728240-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=59
+2019-01-29 22:30:52.846 INFO  (qtp1362728240-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=cfree&action=STATUS&wt=json} status=0 QTime=0
+2019-01-29 22:30:52.937 INFO  (qtp1362728240-22) [   ] o.a.s.h.a.CoreAdminOperation core create command name=cfree&action=CREATE&instanceDir=cfree&wt=json
+2019-01-29 22:30:53.004 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.c.SolrResourceLoader [cfree] Added 53 libs to classloader, from paths: [/D:/dev/CFree/backend/venv/Scripts/cfree/solr-6.6.3/contrib/clustering/lib, /D:/dev/CFree/backend/venv/Scripts/cfree/solr-6.6.3/contrib/extraction/lib, /D:/dev/CFree/backend/venv/Scripts/cfree/solr-6.6.3/contrib/langid/lib, /D:/dev/CFree/backend/venv/Scripts/cfree/solr-6.6.3/contrib/velocity/lib, /D:/dev/CFree/backend/venv/Scripts/cfree/solr-6.6.3/dist]
+2019-01-29 22:30:53.150 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.3
+2019-01-29 22:30:53.291 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.s.IndexSchema [cfree] Schema name=example-data-driven-schema
+2019-01-29 22:30:53.796 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2019-01-29 22:30:53.854 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.c.CoreContainer Creating SolrCore 'cfree' using configuration from instancedir D:\dev\CFree\backend\venv\Scripts\cfree\solr-6.6.3\server\solr\cfree, trusted=true
+2019-01-29 22:30:53.874 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2019-01-29 22:30:53.879 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.c.SolrCore [[cfree] ] Opening new SolrCore at [D:\dev\CFree\backend\venv\Scripts\cfree\solr-6.6.3\server\solr\cfree], dataDir=[D:\dev\CFree\backend\venv\Scripts\cfree\solr-6.6.3\server\solr\cfree\data\]
+2019-01-29 22:30:53.982 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-01-29 22:30:54.225 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-01-29 22:30:54.225 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-01-29 22:30:54.234 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2019-01-29 22:30:54.235 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-01-29 22:30:54.247 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.s.SolrIndexSearcher Opening [Searcher@61f8828d[cfree] main]
+2019-01-29 22:30:54.254 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\dev\CFree\backend\venv\Scripts\cfree\solr-6.6.3\server\solr\cfree\conf
+2019-01-29 22:30:54.267 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-01-29 22:30:54.272 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-01-29 22:30:54.274 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\dev\CFree\backend\venv\Scripts\cfree\solr-6.6.3\server\solr\cfree\conf\elevate.xml
+2019-01-29 22:30:54.284 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2019-01-29 22:30:54.317 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@61f8828d[cfree] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-01-29 22:30:54.317 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-29 22:30:54.317 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-01-29 22:30:54.320 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.SolrCore [cfree] Registered new searcher Searcher@61f8828d[cfree] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-01-29 22:30:54.322 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1624035614336745472
+2019-01-29 22:30:54.329 INFO  (qtp1362728240-22) [   x:cfree] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=cfree&action=CREATE&instanceDir=cfree&wt=json} status=0 QTime=1392
+2019-01-29 22:31:14.735 INFO  (qtp1362728240-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={} status=0 QTime=3
+2019-01-29 22:31:42.308 INFO  (qtp1362728240-15) [   x:cfree] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-29 22:31:42.308 INFO  (qtp1362728240-15) [   x:cfree] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2019-01-29 22:31:42.310 INFO  (qtp1362728240-15) [   x:cfree] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-29 22:31:42.310 INFO  (qtp1362728240-15) [   x:cfree] o.a.s.u.p.LogUpdateProcessorFactory [cfree]  webapp=/solr path=/update params={commit=true}{deleteByQuery=*:* (-1624035664624353280),commit=} 0 71
+2019-01-29 22:31:42.315 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=true,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-29 22:31:42.315 WARN  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 Starting optimize... Reading and rewriting the entire index! Use with care.
+2019-01-29 22:31:42.317 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2019-01-29 22:31:42.317 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-29 22:31:42.318 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-29 22:31:42.318 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2019-01-29 22:31:42.318 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-29 22:31:42.318 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.p.LogUpdateProcessorFactory [cfree]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 3
+2019-01-29 22:31:42.425 WARN  (qtp1362728240-17) [   x:cfree] o.a.s.h.l.XMLLoader Using field boost: 1.0 != 1.0 will not be supported anymore in 7.0. Please index scoring factors into a separate field and combine them with the main query's score using function queries.
+2019-01-29 22:31:42.492 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at D:\dev\CFree\backend\venv\Scripts\cfree\solr-6.6.3\server\solr\cfree\conf\managed-schema
+2019-01-29 22:31:42.583 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-29 22:31:42.584 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@48052ce1
+2019-01-29 22:31:42.894 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.s.SolrIndexSearcher Opening [Searcher@4df730ab[cfree] main]
+2019-01-29 22:31:42.896 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4df730ab[cfree] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.3):C1)))}
+2019-01-29 22:31:42.896 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-29 22:31:42.896 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-29 22:31:42.897 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.SolrCore [cfree] Registered new searcher Searcher@4df730ab[cfree] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.6.3):C1)))}
+2019-01-29 22:31:42.897 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.u.p.LogUpdateProcessorFactory [cfree]  webapp=/solr path=/update params={commit=true}{add=[catalogue.product.5 (1624035664887545856)],commit=} 0 473
+2019-01-29 22:33:05.554 INFO  (qtp1362728240-15) [   x:cfree] o.a.s.s.SolrIndexSearcher Opening [Searcher@a2ae816[cfree] realtime]
+2019-01-29 22:33:05.554 INFO  (qtp1362728240-15) [   x:cfree] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-29 22:33:05.554 INFO  (qtp1362728240-15) [   x:cfree] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@48052ce1
+2019-01-29 22:33:05.597 INFO  (qtp1362728240-15) [   x:cfree] o.a.s.s.SolrIndexSearcher Opening [Searcher@135133ef[cfree] main]
+2019-01-29 22:33:05.598 INFO  (qtp1362728240-15) [   x:cfree] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-29 22:33:05.598 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@135133ef[cfree] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-01-29 22:33:05.598 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-29 22:33:05.598 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.SolrCore [cfree] Registered new searcher Searcher@135133ef[cfree] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-01-29 22:33:05.604 INFO  (qtp1362728240-15) [   x:cfree] o.a.s.u.p.LogUpdateProcessorFactory [cfree]  webapp=/solr path=/update params={commit=true}{deleteByQuery=*:* (-1624035751927742464),commit=} 0 65
+2019-01-29 22:33:05.607 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=true,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-29 22:33:05.607 WARN  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 Starting optimize... Reading and rewriting the entire index! Use with care.
+2019-01-29 22:33:05.608 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2019-01-29 22:33:05.608 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-29 22:33:05.608 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-29 22:33:05.608 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2019-01-29 22:33:05.608 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-29 22:33:05.608 INFO  (qtp1362728240-24) [   x:cfree] o.a.s.u.p.LogUpdateProcessorFactory [cfree]  webapp=/solr path=/update params={commit=true}{optimize=,commit=} 0 1
+2019-01-29 22:33:05.707 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-29 22:33:05.707 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@48052ce1
+2019-01-29 22:33:06.019 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.s.SolrIndexSearcher Opening [Searcher@71eae75a[cfree] main]
+2019-01-29 22:33:06.019 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@71eae75a[cfree] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.6.3):C1)))}
+2019-01-29 22:33:06.019 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-29 22:33:06.020 INFO  (searcherExecutor-7-thread-1-processing-x:cfree) [   x:cfree] o.a.s.c.SolrCore [cfree] Registered new searcher Searcher@71eae75a[cfree] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.6.3):C1)))}
+2019-01-29 22:33:06.020 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-29 22:33:06.020 INFO  (qtp1362728240-17) [   x:cfree] o.a.s.u.p.LogUpdateProcessorFactory [cfree]  webapp=/solr path=/update params={commit=true}{add=[catalogue.product.5 (1624035752099708928)],commit=} 0 318
+2019-01-29 22:33:36.415 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=788905599
+2019-01-29 22:33:36.416 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2019-01-29 22:33:36.416 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2019-01-29 22:33:36.416 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2019-01-29 22:33:36.417 INFO  (coreCloseExecutor-12-thread-1) [   x:cfree] o.a.s.c.SolrCore [cfree]  CLOSING SolrCore org.apache.solr.core.SolrCore@52e7725e
+2019-01-29 22:33:36.425 INFO  (coreCloseExecutor-12-thread-1) [   x:cfree] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.cfree

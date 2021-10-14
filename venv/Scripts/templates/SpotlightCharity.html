@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Comfortable and Affordable T-Shirts to Help End Cancer">
+    <meta name="keywords" content="t-shirts, shirts, comfortable, apparel, cancer-free, C-Free, clothing, cancer, cure, contribute">
+    <meta name="author" content="Aidan Ricci">
+    <title>CFree Clothing | Clothing to Celebrate Every Moment!</title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>CFree Clothing</h1>
+        </div>
+        <nav>
+          <ul>
+           <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'catalog' %}">Catalog</a></li>
+            <li><a href="{% url 'mission' %}">Mission</a></li>
+            <li class="current"><a href="{% url 'spotlight_charity' %}">Spotlight Charity</a></li>
+            <li><a href="{% url 'blogs' %}">Blog</a></li>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="Cart.html">Cart</a></li>
+            <li><a href="index.html">Search</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <p>Get your Original Logo Tee Today!</p>
+        <h2>CFree</h2>
+      </div>
+    </section>
+
+    <section id="catalogpreview">
+      <div class="container">
+        <h1>Catalog</h1>
+        <div class="item">
+          <img src="img/watermelontee.jpg"></img>
+        </div>
+        <div class="item">
+          <img src="img/bluetee.jpg"></img>
+        </div>
+        <div class="item">
+          <img src="img/ivorytee.jpg"></img>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe to our Newsletter!</h1>
+
+        <form action="email.py">
+          <p>Receive all our best deals and news</p>
+          Your Email: <input type="email" placeholder="Enter Email...">
+          <button type="submit" class="button">Subscribe  </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="blogs">
+      <div class="container">
+        <h1>Blogs</h1>
+        <div class="box">
+          <img src="img/5foods.jpeg"></img>
+          <h3>Avoid These 5 Foods to Live a Cancer Free Life</h3>
+          <p>Welcome back to C-Free Lifestyle! In our
+          third installment of our health portion we're going to be talking
+          about 5 foods to avoid to live a cancer free life and...</p>
+        </div>
+        <div class="box">
+          <img src="img/5foods.jpeg"></img>
+          <h3>5 Awesome Foods That You Can Eat to Help Prevent Cancer!</h3>
+          <p>Welcome back for the second edition of our new series about living a healthy life. Check out our
+             first health blog at https://cfreeclothing.com/blogs/c-free-lifestyle/c-free-lifestyle-healthy-living
+              where we talk about our favorite grilled...</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2018, CFree</p>
+    </footer>
+  </body>
+</html>

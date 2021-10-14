@@ -1,0 +1,27 @@
+{% load blog_tags %}
+
+{% block content %}
+  <section id="blogs">
+      <div class="container">
+        <h2>CFree Lifestyle Blogs</h2>
+          {% render_bloglist as posts %}
+          {% for post in posts%}
+
+        <div class="row">
+            <div class="col-lg">
+                <div class='box'>
+                    <a href="{% url 'blog:post' post.slug %}">
+                        <img class="img-thumbnail" src="{{post.image.url}}" alt="{{post.altimg}}"></img>
+                    </a>
+                    <h3>{{post.title}}</h3>
+                    <h4>Posted on {{post.timestamp}} by {{post.author}}</h4>
+                    <p>{{post.bodytext| truncatewords:"50"| safe}}</p>
+                </div>
+            </div>
+        </div>
+          {% endfor %}
+      </div>
+  </section>
+{%endblock%}
+
+

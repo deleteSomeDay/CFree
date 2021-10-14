@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block navigation %}
+    {% include "partials/nav_primary.html" with expand_dropdown=1 %}
+{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block column_left %}
+{% endblock %}
+
+{% block content %}
+
+    <section id="showcase">
+      <div class="container">
+        <p>Get your Original Logo Tee Today!</p>
+        <h2>CFree</h2>
+      </div>
+    </section>
+
+    <section id="catalogpreview">
+      <div class="container">
+        <h1>Catalog</h1>
+        <div class="item">
+          <img src="{% static 'img/watermelontee.jpg' %}"></img>
+          <h3>Original Logo Tee Watermelon</h3>
+        </div>
+        <div class="item">
+          <img src="{% static 'img/bluetee.jpg' %}"></img>
+            <h3>Original Logo Tee Light Blue</h3>
+        </div>
+        <div class="item">
+          <img src="{% static 'img/ivorytee.jpg' %}"></img>
+            <h3>Original Logo Tee Ivory</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe to our Newsletter!</h1>
+
+        <form action="email.py">
+          <p>Receive all our best deals and news</p>
+          Your Email: <input type="email" placeholder="Enter Email...">
+          <button type="submit" class="button">Subscribe  </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="blogs">
+      <div class="container">
+        <h1>Blogs</h1>
+           {% for post in posts %}
+        <div class="box">
+          <img src="{% static 'img/5foods.jpeg' %}"></img>
+          <h3>{{post.title}}</h3>
+          <h4>Posted on {{post.timestamp}} by {{post.author}}</h4>
+          <p>{{post.bodytext| truncatewords:"100"}}</p>
+        </div>
+          {% endfor %}
+      </div>
+    </section>
+
+{% endblock content %}
+
+

@@ -1,0 +1,47 @@
+{% load i18n %}
+{% load static %}
+<footer class="footer container-fluid">
+    {% block footer %}
+        {% comment %}
+            Could be used for displaying links to privacy policy, terms of service, etc.
+            We have a CSS class defined:
+                <ul class="footer_links inline">
+                    ...
+                </ul>
+         {% endcomment %}
+            <h3>Contact Us At:</h3>
+            <div class="row">
+
+            <div class="col-sm-4">
+                 <div class="footer-img">
+                    <a href="https://www.instagram.com/cfreeclothing/"><img src="{% static 'img/instagram.jpg'%}"></img></a>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="footer-img">
+                   <a href="https://twitter.com/cfreeforlife"><img src="{% static 'img/twitter.jpg'%}"></img></a>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="footer-img">
+                    <a href="https://www.facebook.com/CFreeForLife"><img src="{% static 'img/Facebook.jpg'%}"></img></a>
+                </div>
+            </div>
+
+
+
+
+
+      </div>
+
+            <h4>Email: cfreeclothing@gmail.com</h4>
+        <p>CFree</p>
+
+
+
+
+    {% endblock %}
+
+</footer>

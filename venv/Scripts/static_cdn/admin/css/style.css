@@ -1,0 +1,197 @@
+body
+{
+  font: 15px/1.5 Arial, Helvetica, sans-serif
+  padding: 0;
+  margin: 0;
+  background-color: #54ABA2;
+}
+
+/* Global */
+
+.container
+{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.button
+{
+  height: 38px;
+  background: #5C8C87;
+  border: 0px;
+  color: #ffffff;
+}
+
+ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* Header **/
+
+header{
+  background: #014740;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height:70px;
+  border-bottom: #082E2A 3px solid;
+}
+
+header a
+{
+  color: #ffffff;
+  text-decoration: none;
+  text-transfrom: uppercase;
+  font-size: 16px;
+
+}
+
+header li
+{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding
+{
+  float: left;
+}
+
+header #branding h1
+{
+  margin: 0;
+}
+
+header nav
+{
+  float: right;
+  margin-top: 10px;
+}
+
+
+
+header .current a
+{
+  color: rgb(0,51,51);
+  font-weight: bold;
+}
+
+header a:hover
+{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/*Showcase*/
+#showcase
+{
+  min-height: 1250px;
+  max-height: 1300px;
+  text-align: center;
+  font: 40px/1.5 Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  image-rendering: auto;
+  background: url('../img/frontpage3.jpg') no-repeat 0 -100px;
+  background-size: cover;
+}
+
+#showcase h1, p
+{
+  margin-top: 200px
+}
+
+/* Catalog */
+
+.item
+{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#catalogpreview .item img
+{
+  width: 350px;
+  height: 233px;
+}
+
+#catalogpreview h1
+{
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+  margin: 40px;
+}
+
+/* Newsletter */
+#newsletter
+{
+  padding: 15px;
+  color: #ffffff;
+  background-color: #014740;
+}
+
+#newsletter h1
+{
+  float: left;
+}
+
+#newsletter form
+{
+  margin-top 15px;
+  float: right;
+}
+
+#newsletter input[type="email"]
+{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Blogs */
+
+#blogs h1
+{
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+  margin: 40px;
+}
+
+.box
+{
+  float:left;
+  width: 50%;
+  padding 10px;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+#blogs .box img{
+  width: 400px;
+  height: 500px;
+}
+
+#blogs .box p,h1
+{
+  margin: 0;
+  padding: 0;
+}
+
+footer
+{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+}
